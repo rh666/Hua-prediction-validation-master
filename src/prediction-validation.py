@@ -113,7 +113,7 @@ def main():
             ######  if there is missing hours in predicted file (low confidence for all predicted stock price in the hour)
             ######  record 0 for sum of the error and 0 for number of the stock
 
-                    printresult(errorsum, errornum, window, temptime - window + zeronum, comparison)
+                    printresult(errorsum, errornum, window, temptime - window + zeronum + 1, comparison)
 
                     ### still compute and print the average error in the window for the missing hour
 
