@@ -45,8 +45,7 @@ def printresult(errorsum, errornum, window, starttime, file):
         if sum(errornum[len(errornum) - window:len(errornum)]) == 0:
             tobeprint.append('ignore')
         else:
-            printerror = sum(errorsum[len(errorsum) - window:len(errorsum)]) / sum(
-                errornum[len(errornum) - window:len(errornum)])
+            printerror = sum(errorsum[len(errorsum) - window:len(errorsum)]) / sum(errornum[len(errornum) - window:len(errornum)])
 
             tobeprint.append(str(round(printerror, 2)))
 
