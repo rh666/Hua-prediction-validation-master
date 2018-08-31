@@ -47,7 +47,7 @@ def printresult(errorsum, errornum, window, starttime, file):
         else:
             printerror = sum(errorsum[len(errorsum) - window:len(errorsum)]) / sum(errornum[len(errornum) - window:len(errornum)])
 
-            tobeprint.append(str(round(printerror, 2)))
+            tobeprint.append(format(round(printerror, 2),'.2f'))
 
         file.write('|'.join(tobeprint) + '\n')
         # print '|'.join(tobeprint)
